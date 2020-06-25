@@ -31,14 +31,15 @@
             }
 
             .title {
-                font-size: 96px;
+                font-size: 50px;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">Приветсвуем Вас <br> на нашем сайте новостей</div>
+                <a href="" label="news">Показать все новости</a>
             </div>
         </div>
     </body>
