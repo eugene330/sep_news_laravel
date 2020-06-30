@@ -12,4 +12,8 @@ class News extends Model
      * @var string
      */
     protected $table = 'news';
+    protected $fillable = [
+        'title',
+        'text',
+    ];
 }
