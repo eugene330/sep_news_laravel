@@ -16,18 +16,18 @@
 
                 <!-- Тело таблицы -->
                 <tbody>
-                @foreach ($news as $news)
+                @foreach ($news as $newsItem)
                     <tr>
                         <!-- Название новости -->
                         <td class="table-text">
-                            <div><a href="">{{ $news->title }}</a></div>
+                            <div><a href="{{route('news.show', $newsItem->id)}}">{{ $newsItem->title }}</a></div>
                         </td>
                     </tr>
                 @endforeach
                 </tbody>
             </table>
 
-            <button type="button" class="btn btn-info"><a href="" label="news">Добавить новость</a></button>
+            <button type="button" class="btn btn-info"><a href="{{route('news.create')}}" label="news">Добавить новость</a></button>
         </div>
     </div>
 @endsection;

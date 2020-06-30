@@ -2,34 +2,14 @@
 @section('content')
     <div class="container">
         <div class="content">
-            <button type="button" class="btn btn-info"><a href="news.list" label="news">Вернуться к списку новостей</a></button>
+            <a href="{{route('news.list')}}" label="news" class="btn btn-info">Вернуться к списку новостей</a>
 
-            <table class="table table-striped task-table">
-
-                <!-- Заголовок таблицы -->
-                <thead>
-                <tr>
-                    <th>News</th>
-                    <th>&nbsp;</th>
-                </tr>
-                </thead>
-
-                <!-- Тело таблицы -->
-                <tbody>
-                @foreach ($news as $news)
-                    <tr>
-                        <td class="table-text">
-                            <div>{{ $news->title }}</div>
-                        </td>
-                        <td class="table-text">
-                            <div>{{ $news->text }}</div>
-                        </td>
-                    </tr>
-                @endforeach
-                </tbody>
-            </table>
-
-            <button type="button" class="btn btn-info"><a href="" label="news">Добавить новость</a></button>
+            <h2>
+                {{$news->title}}
+            </h2>
+            <div>
+                {{$news->text}}
+            </div>
         </div>
     </div>
-@endsection;
+@endsection
