@@ -4,10 +4,12 @@
     <title>News</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <style>
         html, body {
             height: 100%;
+            background-color: #cecece;
         }
 
         body {
@@ -21,7 +23,6 @@
 
         .container {
             text-align: center;
-            display: table-cell;
             vertical-align: middle;
         }
 
