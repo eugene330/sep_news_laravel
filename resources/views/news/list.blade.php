@@ -2,7 +2,7 @@
 @section('content')
     <div class="container">
         <div class="content">
-            <button type="button" class="btn btn-info"><a href="news.create" label="news">Добавить новость</a></button>
+            <button type="button" class="btn btn-info"><a href="{{route('news.create')}}" label="news">Добавить новость</a></button>
 
             <table class="table table-striped task-table">
 

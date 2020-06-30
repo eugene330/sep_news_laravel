@@ -35,4 +35,3 @@ Route::group(['prefix' => 'news'], function () {
     })->name('news.create');
 
 });
-
