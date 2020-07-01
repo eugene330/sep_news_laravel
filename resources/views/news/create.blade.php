@@ -9,7 +9,7 @@
     @include('common.errors')
 
     <!-- Форма новой новости -->
-        <form action="{{route('news.store')}}" method="POST" class="form-horizontal">
+        <form action="{{route('news.store')}}" method="POST" style="display: inline-block">
         {{ csrf_field() }}
 
         <!-- Название и текст -->

@@ -10,7 +10,6 @@
                 <thead>
                 <tr>
                     <th>News</th>
-                    <th>&nbsp;</th>
                 </tr>
                 </thead>
 
